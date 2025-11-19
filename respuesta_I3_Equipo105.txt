@@ -1,3 +1,16 @@
+Responde BETA:
+A- ¿Cómo queda el master después de estos cambios?
+  El master queda con toda la información combinada de las ramas del equipo. El archivo datos.txt contiene los datos agregados por GAMMA, ALFA y BETA. Los archivos CPUGamma.txt, CPUAlfa.txt y CPUBeta.txt están en master.
+  Y más adelante, también queda beta.txt con los datos de ifconfig y la hora.
+B- ¿Beta pudo ver todos los cambios que se realizaron?
+  Si, siempre y cuando haya hecho git pull 
+C- ¿Qué debió hacer (todos los comandos) en el punto 5 para poder hacer el merge?
+  Yo hago el merge para que esté todo en el main
+    git checkout main
+    git merge Corpus
+    git add .
+    git commit -m
+    git push
 
 Responde ALFA:
 G-¿que debió hacer(todos los comandos) en el punto 8 para poder hacer lo pedido?
