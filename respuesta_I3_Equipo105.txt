@@ -1,1 +1,4 @@
 
+Responde ALFA:
+G-¿que debió hacer(todos los comandos) en el punto 8 para poder hacer lo pedido?
+Un echo con mi nombre y apellido para el archivo beta.txt y un ipconfig >> beta.txt para después hacer git add beta.txt, git commit, git push
