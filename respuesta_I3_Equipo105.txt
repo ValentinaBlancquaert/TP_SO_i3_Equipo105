@@ -15,3 +15,41 @@ C- ¿Qué debió hacer (todos los comandos) en el punto 5 para poder hacer el me
 Responde ALFA:
 G-¿que debió hacer(todos los comandos) en el punto 8 para poder hacer lo pedido?
 Un echo con mi nombre y apellido para el archivo beta.txt y un ipconfig >> beta.txt para después hacer git add beta.txt, git commit, git push
+
+
+
+
+Responde GAMMA:
+
+d) Sí, las ramas creadas por BETA y GAMMA quedan con datos actualizados. Cada rama refleja los cambios que cada integrante fue subiendo a su respectiva rama.
+
+e) Problemas al hacer el merge:
+
+Hubo que traer los últimos cambios de BETA antes de modificar beta.txt, porque si no, al hacer push se produce un error de “rechazo” por cambios remotos.
+
+Posibles conflictos si ALFA o BETA modificaron la misma línea de beta.txt. Para resolverlos, hay que editar el archivo, hacer commit y luego push.
+
+f) Comandos que GAMMA debió usar en el punto 7 para poder hacer lo pedido:
+
+# Traer todas las ramas remotas
+git fetch origin
+
+# Crear y moverte a la rama de BETA
+git checkout -b betaBETA origin/<nombre-rama-BETA>
+
+# Asegurarte de tener la versión más reciente
+git pull origin <nombre-rama-BETA>
+
+# Modificar beta.txt con tus datos
+# (Abrir beta.txt y agregar: Corpus Gonzalo - GAMMA - IP - fecha y hora)
+
+# Agregar cambios al staging
+git add beta.txt
+
+# Hacer commit
+git commit -m "Agregar datos de GAMMA a beta.txt"
+
+# Subir cambios al remoto
+git push origin betaBETA
+
+
